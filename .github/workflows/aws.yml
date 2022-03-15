@@ -10,7 +10,7 @@ jobs:
     name: Use S3cmd for AWS
     steps:
       - name: Set up S3cmd cli tool
-        uses: s3-actions/s3cmd@main
+        uses: laithrafid/s3cmd@main
         with:
           provider: aws
           region: 'eu-central-1'
