@@ -26,7 +26,7 @@ Currently AWS ,digitalocean and Linode are supported as provider but it could be
 
 ```yml
 - name: Set up S3cmd cli tool
-  uses: s3-actions/s3cmd@v1.1
+  uses: laithrafid/s3cmd@v1.3
   with:
     provider: aws # default is linode
     region: 'eu-central-1'
