@@ -10,7 +10,7 @@ jobs:
     name: Use S3cmd for Linode
     steps:
       - name: Set up S3cmd cli tool
-        uses: s3-actions/s3cmd@main
+        uses: laithrafid/s3cmd@main
         with:
           region: 'eu-central-1'
           access_key: ${{ secrets.S3_ACCESS_KEY_LINODE }}
