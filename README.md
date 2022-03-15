@@ -2,13 +2,13 @@
 
 This action is a simple wrapper for [S3cmd](https://github.com/s3tools/s3cmd). 
 
-Currently AWS and Linode are supported as provider but it could be used with other providers too when using additional flags.
+Currently AWS ,digitalocean and Linode are supported as provider but it could be used with other providers too when using additional flags.
 
 ## Inputs
 
 ### `provider`
 
-**Not Required** The s3 provider to use. Defaults to Linode. Currently AWS and Linode possible.
+**Not Required** The s3 provider to use. Defaults to Linode. Currently AWS ,digitalocean and Linode possible.
 
 ### `secret_key`
 
@@ -52,6 +52,12 @@ For linode object storage this wont work though. The region must always be set t
 
 ```console
 s3cmd mb --host ap-south-1.linodeobjects.com  s3://my-bucket
+```
+
+For digitalocean Spaces storage this wont work too. The region must always be set to NYC3. If you want to change the region on the fly you can still do ith with the below command.
+
+```console
+s3cmd mb --host SFO3.digitaloceanspaces.com  s3://my-bucket
 ```
 
 
